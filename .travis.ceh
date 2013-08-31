@@ -1,4 +1,5 @@
-#!/bin/bash -e
+#!/bin/bash
+set -e
 
 sudo mkdir /opt/ceh /nix
 sudo chown $USER. /opt/ceh /nix
