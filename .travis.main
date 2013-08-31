@@ -2,8 +2,17 @@
 
 . /opt/ceh/scripts/ceh-profile.sh
 
+doTest() {
+  cd $1
+  cabal install --only-dependencies
+  cabal configure --user --enable-tests
+  cabal build
+  cabal test
+  cabal install --user --enable-tests #Reuse the settings of configuration
+  cd -
+}
+
 cabal update
-cabal install --only-dependencies
-cabal configure --user --enable-tests
-cabal build
-cabal test
+
+doTest Cabal
+doTest cabal-install
