@@ -87,7 +87,7 @@ instance Text PackageName where
     return (PackageName (intercalate "-" ns))
     where
       component = do
-        cs <- Parse.munch1 Char.isAlphaNum
+        cs <- Parse.many1 (Parse.satisfy Char.isAlphaNum)
         if all Char.isDigit cs then Parse.pfail else return cs
         -- each component must contain an alphabetic character, to avoid
         -- ambiguity in identifiers like foo-1 (the 1 is the version number).
