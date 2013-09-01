@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Blaisorblade/cabal.png?branch=topic/travis)](https://travis-ci.org/Blaisorblade/cabal)
+
 This Cabal git repository contains multiple packages:
 
  * Cabal/          -- the Cabal library package
