@@ -5,11 +5,7 @@ set -ex
 
 doTest() {
   cd $1
-  cabal install --user --only-dependencies --enable-tests
-  cabal configure --user --enable-tests
-  cabal build
-  cabal test
-  cabal install --user --enable-tests #Reuse the settings of configuration
+  cabal install --user --enable-tests
   cd -
 }
 
