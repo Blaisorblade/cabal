@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Blaisorblade/cabal.png?branch=topic/travis)](https://travis-ci.org/Blaisorblade/cabal)
+[![Build Status](https://travis-ci.org/Blaisorblade/cabal.png?branch=pr/travis)](https://travis-ci.org/Blaisorblade/cabal)
 
 This Cabal git repository contains multiple packages:
 
